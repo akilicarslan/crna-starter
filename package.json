@@ -1,0 +1,40 @@
+{
+  "name": "AwesomeProject",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "test:watch": "yarn test --watch",
+    "coverage": "yarn run test --coverage",
+    "format": "prettier --write 'src/**/*.{ts,tsx}' && tslint --fix --project .",
+    "format:check": "prettier -c 'src/**/*.{ts,tsx}'",
+    "lint": "tsc && tslint --project tsconfig.json"
+  },
+  "dependencies": {
+    "react": "16.8.3",
+    "react-native": "0.59.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/runtime": "^7.4.3",
+    "@types/jest": "^24.0.11",
+    "@types/react": "^16.8.13",
+    "@types/react-native": "^0.57.42",
+    "@types/react-test-renderer": "^16.8.1",
+    "babel-jest": "^24.7.1",
+    "jest": "^24.7.1",
+    "metro-react-native-babel-preset": "^0.53.1",
+    "prettier": "^1.16.4",
+    "react-native-testing-library": "^1.7.0",
+    "react-test-renderer": "16.8.3",
+    "tslint": "^5.15.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-consistent-codestyle": "^1.15.1",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.4.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
