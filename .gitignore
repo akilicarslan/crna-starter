@@ -61,3 +61,6 @@ buck-out/
 
 # Test Coverage
 coverage
+
+# Storybook
+storybook/storyLoader.js
