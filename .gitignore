@@ -63,4 +63,4 @@ buck-out/
 coverage
 
 # Storybook
-storybook/storyLoader.js
+.storybook/storyLoader.js
