@@ -13,7 +13,7 @@
     "format": "prettier --write 'src/**/*.{ts,tsx}' && tslint --fix --project .",
     "format:check": "prettier -c 'src/**/*.{ts,tsx}'",
     "lint": "tsc && tslint --project tsconfig.json",
-    "storybook": "watch rnstl ./src --wait=100 | storybook start | yarn start --projectRoot .storybook --watchFolders $PWD"
+    "storybook": "watch rnstl ./src --wait=100 | storybook start | yarn start --projectRoot storybook --watchFolders $PWD"
   },
   "dependencies": {
     "react": "16.8.3",
@@ -55,7 +55,7 @@
         "./src"
       ],
       "pattern": "**/*.stories.tsx",
-      "outputFile": "./.storybook/storyLoader.js"
+      "outputFile": "./storybook/storyLoader.js"
     }
   },
   "jest": {
